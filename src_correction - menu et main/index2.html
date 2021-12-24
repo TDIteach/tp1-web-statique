@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon_almajd.ico"
+      type="image/x-icon"
+    />
+    <title>Almajd School</title>
+    <style>
+      @font-face {
+        font-family: 'museoslab-500';
+        src: url('../fonts/museoslab-500.otf');
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'museoslab-500';
+        /* border: 1px solid red; */
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+        padding: 15px 5px;
+        overflow: hidden;
+      }
+      header {
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        border-top: 2px solid rgb(235, 225, 225);
+        border-bottom: 2px solid rgb(235, 225, 225);
+        margin-bottom: 30px;
+      }
+
+      #logo {
+        float: left;
+      }
+
+      #desc {
+        display: inline-block;
+        vertical-align: top;
+      }
+      #logo span {
+        color: rgb(236, 183, 6);
+      }
+      #logo p:first-child {
+        font-size: 1.5rem;
+      }
+      #logo p:last-child {
+        font-size: 0.75rem;
+      }
+      nav {
+        overflow: hidden;
+      }
+      #menu {
+        list-style-type: none;
+        float: right;
+      }
+      .menu_item {
+        float: left;
+        margin-left: 10px;
+      }
+      .menu_item img {
+        vertical-align: middle;
+      }
+      .menu_link {
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+        text-transform: capitalize;
+      }
+      .menu_link:hover {
+        color: rgb(236, 183, 6);
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover {
+        background-color: rgb(236, 183, 6);
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      #main {
+        height: 100vh;
+        background: url('images/thumb.jpg') 10% center no-repeat;
+        background-size: cover;
+      }
+      #main_content {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        text-align: center;
+        color: #e7e3e3;
+      }
+      #main_content button {
+        display: inline-block;
+        background-color: transparent;
+        padding: 5px 10px;
+        border: 1px solid blue;
+      }
+      /* responsive design */
+      /* @media screen and (max-width: 770px) {
+        #logo,
+        .menu_item {
+          float: none;
+          text-align: center;
+        }
+        #menu {
+          width: 100%;
+        }
+        li {
+          display: block;
+          border: 1px solid red;
+        }
+        body {
+          background-color: red;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <img src="images/school.png" alt="edua logo" width="50" height="50" />
+          <div id="desc">
+            <p>
+              <span><strong>Almajd</strong></span> School
+            </p>
+            <p>Your path to knowledge</p>
+          </div>
+        </div>
+        <nav>
+          <ul id="menu">
+            <li class="menu_item">
+              <a href="#" class="menu_link">Home</a>
+            </li>
+            <li class="menu_item dropdown">
+              <a href="#courses" class="menu_link">Courses</a>
+              <img src="images/mainsubmenu.png" alt="" />
+              <div class="dropdown-content">
+                <a href="#">IT courses</a>
+                <a href="#">Project managment Courses</a>
+                <a href="#">Other courses</a>
+              </div>
+            </li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Events</a>
+            </li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Blog</a>
+            </li>
+            <li class="menu_item">
+              <a href="#contact" class="menu_link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="clear"></div>
+    <section id="main">
+      <div class="container">
+        <div id="main_content">
+          <h1>Lorem ipsum dolor sit</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, esse.
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button>Lorem, ipsum dolor.</button>
+          <button>Lorem, ipsum dolor.</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
